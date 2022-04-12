@@ -1,0 +1,27 @@
+<html>
+    
+    <div id="listbox">
+    <ul id="list">
+    </ul>
+  </div>
+  <input id="inputTxt" />
+  <button id="addBtn">Add</button>
+
+
+  
+  <script>
+    document.getElementById('addBtn').addEventListener("click", displayData);
+    function displayData() {
+      
+        let txt = document.getElementById('inputTxt').value;
+        let list = document.getElementById('list')
+        
+          if(txt){
+            list.innerHTML  = list.innerHTML + "<li>"+txt+"</li>";
+          }
+      document.getElementById('inputTxt').value = '';
+    }
+    </script>
+
+
+  </html>
